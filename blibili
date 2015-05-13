@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+  
+ </head>
+ <body>
+ <style type="text/css">
+   * {
+    padding: 0;
+    margin: 0;
+  }
+  .head_top {
+    height: 36px;
+    background: #fff;
+    box-shadow: rgba(0,0,0,0.1) 0 1px 2px;
+    top: 0;
+    left: 0;
+    position: relative;
+    text-align: center;
+    z-index: 10000;
+    font-size: 12px;
+    font-family: Helvetica,Arial,"Source Han Sans CN","Hiragino Sans GB","Microsoft Yahei","Microsoft Jhenghei",STHeiti,verdana,sans-serif;
+  }
+  
+  .head_top_content {
+    margin-right: auto;
+    margin-left: auto;
+    height: 36px;
+    width: 1160px;
+    
+  }
+  .head_top_left li,.head_top_left ul,.head_top_right li,.head_top_right ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+
+  .head_top_left {
+    float: left;
+    height: 30px;
+    width: 498px;
+    background: url(b_image/B_top_left.png) 0 -0  no-repeat;
+  }
+  .head_top_left li {
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 5px;
+    position: relative;
+  }
+
+  .home a ,.huayou a, .game a, .zhibo a, .phone a, .japan a  {
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+  }
+  .home a:hover, .huayou a:hover, .game a:hover, .zhibo a:hover, .phone a:hover, .japan a:hover  {
+    text-shadow: 0 1px 6px #999;
+  }
+  li.home {
+    left: 5px;
+    top: 5px;
+    width: 69px;
+  }
+  li.huayou {
+    left: 5px;
+    top: 5px;
+    width: 54px;
+  }
+  li.game {
+    left: 5px;
+    top: 5px;
+    width: 78px;
+  }
+  li.zhibo {
+    left: 5px;
+    top: 5px;
+    width: 54px;
+  }
+  li.phone {
+    left: 25px;
+    top: 5px;
+    width: 54px;
+  }
+  li.japan {
+    left: 18px;
+    top: 5px;
+    width: 66px;
+  }
+  .head_top_right {
+    float: right;
+    height: 30px;
+    width: 325px;
+    
+  }
+
+  .head_top_right li {
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 5px;
+    position: relative;
+  }
+  .history a, .favourate a, .timeline a, .userCenter a {
+    display: block;
+    height: 100%;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+  }
+  .history a:hover, .favourate a:hover, .timeline a:hover, .userCenter a:hover {
+    color:  #00a1d6;
+  }
+
+  li.tougao {
+    display: block;
+    top: 5px;
+    width: 64px
+    left:25px;
+  }
+
+  li.tougao a {
+    color: #333;
+    text-decoration: none;
+  }
+  .tougao a:hover {
+    color:  #00a1d6;
+    background-position: 36px;
+  }
+  li.history {
+    left: -15px;
+    top: 5px;
+    width: 54px
+  }
+  li.favourate {
+    left: -5px;
+    top: 5px;
+    width: 66px
+  }
+  li.timeline {
+    left: 5px;
+    top: 5px;
+    width: 54px
+  }
+  li.userCenter {
+    left: 5px;
+    top: 5px;
+    width: 32px
+  }
+.head_down_yetou {
+  width: 100%;
+  height: 120px;
+  margin:0 auto;
+  background: url(b_image/bili_header.png);
+
+}
+.head_down_yetou_1 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1160px;
+  height: 120px;
+  margin:0 auto;
+  background: url(b_image/bili_header_1.png);
+}
+.daohang {
+  height: 40px;
+  background: #fff;
+  box-shadow: rgba(0,0,0,0.1) 0 1px 2px;
+  top: 0;
+  left: 0;
+  position: relative;
+  text-align: center;
+  z-index: 10000;
+  font-size: 14px;
+  font-family: Helvetica,Arial,"Source Han Sans CN","Hiragino Sans GB","Microsoft Yahei","Microsoft Jhenghei",STHeiti,verdana,sans-serif;
+}
+.daohang_content {
+  margin-right: auto;
+  margin-left: auto;
+  height: 40px;
+  width: 1160px;
+}
+
+.daohang_content li {
+  list-style: none;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  padding: 7px 23px;
+  margin:  0;
+  position: relative;
+}
+
+.daohang_content li.shouye {
+  list-style: none;
+  float: left;
+  text-align: left;
+  line-height: 30px;
+  padding: 7px 0;
+  margin:  0;
+  position: relative;
+}
+.daohang_content li.donghua {
+  list-style: none;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  padding: 7px 23px;
+  margin:  0 0 0 23px;
+  position: relative;
+}
+.daohang_content li.paihang {
+  list-style: none;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  padding: 7px 23px;
+  margin:  0;
+  position: relative;
+  background: url(b_image/b_paihang.png) 0 0px no-repeat;
+  overflow: hidden;
+}
+.shouye a ,.donghua a, .fanju a, .yinyue a, .wudao a, .youxi a , .keji a , .yule a , .guichu a , .dianying a, .dianshiju a ,.paihang a  {
+  display: block;
+  height: 100%;
+  text-align: center;
+  color: #222;
+  text-decoration: none;
+}
+.paihang a {
+  display: block;
+  height: 100%;
+  width: 66px;
+  text-align: center;
+  color: #222;
+  text-decoration: none;
+}
+ 
+.shouye a:hover, .donghua a:hover, .fanju a:hover, .yinyue a:hover, .wudao a:hover, .youxi a:hover, .keji a:hover, .yule a:hover, .guichu a:hover , .dianying a:hover, .dianshiju a:hover, .paihang a:hover {
+  text-shadow: 0 1px 6px #999;
+}
+
+.head_down_search input {
+  float:left;
+  width:200px;
+  height:37px;
+  padding:1px 2px;
+  margin:0;
+  border:1px solid rgba(0,0,0,0.1);
+  outline:none;
+}
+.head_down_search button {
+  float:left;
+  height:41px;
+  width: 40px;
+  padding:0;
+  margin:0 0 0 -3px;
+  border:1px solid rgba(0,0,0,0.1);
+  text-indent:-9999px;
+  background:url(b_image/bili_s_buttom.png) no-repeat 0 0;
+  cursor:pointer;
+}
+.head_down_search button:hover {
+  background:url(b_image/bili_s_buttom_1.png) no-repeat 0 0;
+}
+.addnew_1,.addnew_2,.addnew_3,.addnew_4,.addnew_5,.addnew_6,.addnew_7,.addnew_8,.addnew_9,.addnew_10 {
+  position: absolute;
+  top: -9px;
+  display: block;
+  left: 50%;
+  color: #fff;
+  border-radius: 4px;
+  line-height: 14px;
+  padding: 1px 5px 1px 5px;
+  text-align: center;
+  font-family: Calibri;
+  background: #f489ad;
+  font-size: 12px;
+  min-width: 18px;
+}
+.addnew_1 {
+
+  margin-left: -14px;
+}
+.addnew_2 {
+
+  margin-left: -14px;
+}
+.addnew_3 {
+  margin-left: -14px;
+}
+.addnew_4 {
+  margin-left: -14px;
+}
+.addnew_5 {
+  margin-left: -14px;
+}
+.addnew_6 {
+  margin-left: -14px;
+}
+.addnew_7 {
+  margin-left: -14px;
+}
+.addnew_8 {
+  margin-left: -15px;
+}
+.addnew_9 {
+  margin-left: -15px;
+}
+.addnew_10 {
+  margin-left: -15px;
+}
+
+.tougao button {
+  float:right;
+  height:30px;
+  width: 64px;
+  padding:0;
+  margin:0 ;
+  border:none;
+  text-indent:9999px;
+  background: url(b_image/B_tougao.png) -10px -3px  no-repeat;
+  cursor:pointer;
+}
+.tougao button:hover {
+  float:right;
+  height:30px;
+  width: 64px;
+  padding:0;
+  margin:0 ;
+  border:none;
+  text-indent:9999px;
+  background: url(b_image/B_tougao_1.png) -10px -3px  no-repeat;
+  cursor:pointer;
+}
+.addnew_adr {
+  position: absolute;
+  top: 2px;
+  display: block;
+  margin-left: 90px;
+  color: #fff;
+  border-radius: 15px;
+  line-height: 13px;
+  padding: 1px 5px 1px 5px;
+  text-align: center;
+  font-family: Calibri;
+  background: #f25d8e;
+  font-size: 12px;
+  min-width: 18px;
+}
+
+.lunbo {
+    width: 100%;
+    height: 260px;
+    background: #fff;
+    padding: 20px 0;
+    top: 0;
+    left: 0;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    font-size: 12px;
+    font-family: Helvetica,Arial,"Source Han Sans CN","Hiragino Sans GB","Microsoft Yahei","Microsoft Jhenghei",STHeiti,verdana,sans-serif;
+  }
+  .lunbo_content {
+    margin-right: auto;
+    margin-left: auto;
+    height: 260px;
+    width: 1160px; 
+  }
+  .lunbo_left {
+    float: left;  
+  }
+  .lunbo_left_content {
+    margin:  0;
+    width: 440px;
+    height: 220px;
+    overflow: hidden;
+    border: none;
+    background: #fff;
+  }
+  .lunbo_left_content li {
+    overflow: auto;
+  }
+
+  .lunbo_btn {
+    position: absolute;
+    padding-left: 210px;
+    z-index: 7;
+    width: 220px;
+    height: 27px;
+    margin: 5px auto;
+    text-align: right;
+    color: #000;
+  }
+  .lunbo_left_content div {
+    position: absolute;
+    top: 210px;
+    margin: 0 0 0 50px;
+    z-index: 9;
+    width: 220px;
+    height: 27px;
+    text-align: left;
+    color: #000;
+    font-size: 16px;
+    display: hidden;
+  }
+  .b_bantouming {
+    position: absolute;
+    top: 205px;
+    margin: 0 ;
+    z-index: 5;
+    width: 220px;
+    height: 27px;
+    text-align: left;
+    color: #000;
+    font-size: 16px;
+  }
+  .lunbo_left_content div a {
+    color: #fff;
+    text-decoration: none; 
+  }
+  .lunbo_left_content div  a:hover {
+    text-shadow: 0 1px 6px #999;
+  }
+  .b_bantouming div.b_bantouming {
+
+  }
+  .lunbo_btn a {
+    padding: 25px 10px;
+    text-decoration: none;
+    background: url(b_image/b_btn_1.png) 0 0 no-repeat;
+  }
+
+  .lunbo_btn a:hover {
+    background: url(b_image/b_btn_2.png) 0 0  no-repeat;
+  }
+  .lunbo_btn a:active {
+    background: url(b_image/b_btn_3.png) 0 0  no-repeat;
+  }
+
+.lunbo_right_content {
+  width: 720px;
+  height: 220px;
+  float: left;
+  margin:  0;
+  background: #fff;
+  z-index: 3;
+  overflow: hidden;
+}
+.lunbo_right_content li {
+ 
+  float: left;
+  width: 160px;
+  height: 100px;
+  z-index: 4;
+  margin: 0 0 20px 20px;
+  list-style: none;
+  overflow: hidden;
+}
+
+.lunbo_right_content li div {
+  width: 150px;
+  height: 25px;
+  margin: -30px 10px 0;
+  list-style: none;
+  position: absolute;
+  z-index: 7;
+  color:#fff;
+  text-align: left;
+  line-height: 25px;
+}
+.footer {
+  width: 100%;
+  height: 165px;
+  margin:   20px 0 0 0;
+  line-height: 24px;
+  padding-top: 20px;
+  overflow: auto;
+  color: #999BBB;
+  text-align: center;
+  z-index: 1;
+  border: 1px solid #eee;
+  font-size: 12px;
+  font-family: Helvetica,Arial,"Source Han Sans CN","Hiragino Sans GB","Microsoft Yahei","Microsoft Jhenghei",STHeiti,verdana,sans-serif;
+}
+.footer_content {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1160px;
+  z-index: 2;
+}
+.footer_left {
+  width: 720px;
+}
+
+.footer_left ul {
+  margin:0 auto;
+  list-style: none;
+  margin: 0 auto;
+  height: 125px;
+  float: left;
+}
+.footer_left li  {
+  float: left;
+  text-align: left;
+  list-style: none;
+  width: 180px;
+  height: 110px;
+  padding-right: 0;
+  line-height: 22px;
+}
+.footer_left li a {
+  text-align: left;
+  line-height: 22px;
+  color: #333;
+  text-decoration:none;
+}
+
+
+
+.wx-ewm {
+  margin-top: -164px;
+  margin-left: 8px;
+  display: block;
+  width: 130px;
+  height: 130px;
+  z-index: 33;
+  cursor: pointer;
+  position: absolute;
+}
+.wx-arrow {
+  width: 130px;
+  height: 130px;
+  border: 1px solid #dddddd;
+  background: url(b_image/b_wx.png) center center no-repeat;
+  z-index: 34;
+  cursor: pointer;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+
+
+.footer_right {
+  margin-left: 50px;
+  width: 390px;
+  height: 125px;
+  float: left;
+  text-align: left; 
+  overflow: hidden; 
+}
+.hezuo_left {
+  display: block;
+  float: left;
+  background: url(b_image/b_hezuo.png) 0 0 no-repeat;
+  width: 106px;
+  height: 117px;
+  margin: 0;
+}
+.hezuo_left p {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: rgb(153, 155, 187);
+  display: block;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+}
+.hezuo_right span {
+  color: rgb(34, 34, 34);
+  display: inline;
+  text-align: left;
+  width: auto;
+
+}
+
+
+ </style>
+  <div class="head_top">
+  <div class="head_top_content">
+    <div class="head_top_left">
+    <div>
+      <ul>
+        <li class="home"><a href="#" class="b_link">首页</a></li>
+        <li class="huayou"><a href="#" class="b_link">画友</a></li>
+        <li class="game"><a href="#" class="b_link">游戏中心</a></li>
+        <li class="zhibo"><a href="#" class="b_link">直播</a></li>
+        <li class="phone"><a href="#" class="b_link">手机端</a></li>
+        <li class="japan"><a href="#" class="b_link">日本游</a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="head_top_right">
+      <ul>
+        <li class="tougao"><a href="#" class="b_link"><button type="submit"></button></a></li>
+        <li class="history"><a href="#" class="b_link">历史</a></li>
+        <li class="favourate"><a href="#" class="b_link">收藏夹</a></li>
+        <li class="timeline"><a href="#" class="b_link">动态</a></li>
+          <span class="addnew_adr">106</span>
+        <li class="userCenter"><a href="#" class="b_link">中心</a></li> 
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <div class="head_down">
+    <div class="head_down_yetou"><div class="head_down_yetou_1"></div></div>
+    <div class="daohang">
+    <div class="daohang_content">
+      <ul>
+        <li class="shouye"><a href="#">首页</a></li>
+        <li class="donghua"><a href="#">动画</a><span class="addnew_1">11</span></li>
+          
+        <li class="fanju"><a href="#">番剧</a><span class="addnew_2">22</span></li>
+          
+        <li class="yinyue"><a href="#">音乐</a><span class="addnew_3">33</span></li>
+          
+        <li class="wudao"><a href="#">舞蹈</a><span class="addnew_4">44</span></li>
+          
+        <li class="youxi"><a href="#">游戏</a><span class="addnew_5">55</span></li>
+          
+        <li class="keji"><a href="#">科技</a><span class="addnew_6">66</span></li>
+          
+        <li class="yule"><a href="#">娱乐</a><span class="addnew_7">77</span></li>
+          
+        <li class="guichu"><a href="#">鬼畜</a><span class="addnew_8">88</span></li>
+          
+        <li class="dianying"><a href="#">电影</a><span class="addnew_9">99</span></li>
+          
+        <li class="dianshiju"><a href="#">电视剧</a><span class="addnew_10">xx</span></li>
+          
+        <li class="paihang"><span></span><a href="#">排行</a></li>
+      </ul>
+      <div class="head_down_search">
+        <form method="post" action="">
+          <input type="text" value="" /><button type="submit">搜索</button>
+        </form>
+      </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="lunbo" >
+  <div class="lunbo_content">
+    <div class="lunbo_left">
+      <div class="lunbo_left_content">
+        <ul>
+          <li id="lunbo_1"><img src="b_image/lunbo_1.jpg" /><a href="#"><div><a href="#">亚尔斯兰</a></div></a></li>
+          <li id="lunbo_2"><img src="b_image/lunbo_2.jpg" /><a href="#"></a></li>
+          <li id="lunbo_3"><img src="b_image/lunbo_3.jpg" /><a href="#"></a></li>
+          <li id="lunbo_4"><img src="b_image/lunbo_4.jpg" /><a href="#"></a></li>
+          <li id="lunbo_5"><img src="b_image/lunbo_5.jpg" /><a href="#"></a></li>
+          <li id="lunbo_6"><img src="b_image/lunbo_6.jpg" /><a href="#"></a></li>
+        </ul>
+        
+      </div>
+      <div class="lunbo_bot">
+      <div class="lunbo_btn">
+          <a href="#lunbo_1"></a>
+          <a href="#lunbo_2"></a>
+          <a href="#lunbo_3"></a>
+          <a href="#lunbo_4"></a>
+          <a href="#lunbo_5"></a>
+          <a href="#lunbo_6"></a>
+      </div>
+      <div class="b_bantouming"><img src="b_image/b_bantouming.png"></div>
+      </div>
+    </div>
+    <div class="lunbo_right">
+      <div class="lunbo_right_content">
+        <ul>
+          <li><img src="b_image/b_09.jpg" /><div>1【09DOTA高分局】~风行隐刺</div></li>
+          <li><img src="b_image/b_09.jpg" /><div>2【09DOTA高分局】~风行隐刺</div></li>
+          <li><img src="b_image/b_09.jpg" /><div>3【09DOTA高分局】~风行隐刺</div></li>
+          <li><img src="b_image/b_09.jpg" /><div>4【09DOTA高分局】~风行隐刺</div></li>
+          <li><img src="b_image/b_09.jpg" /><div>5【09DOTA高分局】~风行隐刺</div></li>
+          <li><img src="b_image/b_09.jpg" /><div>6【09DOTA高分局】~风行隐刺</div></li>
+          <li><img src="b_image/b_09.jpg" /><div>7【09DOTA高分局】~风行隐刺</div></li>
+          <li><img src="b_image/b_09.jpg" /><div>8【09DOTA高分局】~风行隐刺</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div>
+    <div>主要内容</div>
+    <div>侧边栏</div>
+  </div>
+  <div class="footer">
+  <div class="footer_content">
+    <div class="footer_left">
+      <ul>
+        <li>
+          <a href="#">关于我们</a><br>
+          <a href="#">联系我们</a><br>
+          <a href="#">加入我们</a><br>
+          <a href="#">友情链接</a><br>
+          <a href="#">新浪微博 | </a>
+          <a href="#">官方微信<div class="wx-ewm"><div class="wx-arrow"></div></a>
+        </li>
+        <li>
+          <a href="#">画友</a><br>
+          <a href="#">游戏中心</a><br>
+          <a href="#">活动专题页</a><br>
+          <a href="#">壁纸站</a><br>
+        </li>
+        <li>
+          <a href="#">帮助中心</a><br>
+          <a href="#">补档认领处</a><br>
+          <a href="#">高级弹幕</a><br>
+          <a href="#">侵权申诉</a><br>
+          <a href="#">资源免责声明</a><br>
+        </li>
+        <li>
+          <a href="#">bilibili官方淘宝店铺</a><br>
+          <a href="#">名人堂</a><br>
+          <a href="#">资讯</a><br>
+          <a href="#">建议和BUG汇报</a><br>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer_right">
+      <div class="hezuo_left"></div>
+      <div class="hezuo_right" >
+        <p>广播电视节目制作经营许可证：<span>（沪）字第1248号 </span></p>
+        <p>网络文化经营许可证：<span>沪网文[2013]0480-056号</span></p>
+        <p>互联网ICP备案：<span>沪ICP备13002172号-3</span></p>
+        <p>沪ICP证：<span>沪B2-20100043</span></p>
+        <p>信息网络传播视听节目许可证：<span>0910417</span></p>
+        </div>
+    </div>
+    </div>
+  </div>
+
+
+ 	<!--
+
+
+	-->
+ </body>
+</html>
